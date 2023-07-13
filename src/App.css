@@ -1,38 +1,143 @@
 .App {
   text-align: center;
+  min-height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.d-flex{
+  display: flex;
+  min-height:   100vh;
+  flex-wrap: wrap;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.center{
+  justify-content: center;
+  align-items: center;
+}
+
+.right{
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 5vw;
+}
+@media screen and (max-width: 310px) {
+  .right{
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+    scale:0.8;
   }
 }
+  
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.text-center{
+  text-align: center;
+}
+.d-flex2{
+  display: flex;
+  justify-content: center;
+}
+.btn{
+  padding-left: 20px;
+  margin-left: 20px;
+  padding-right: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 12px;
+  justify-content: center;
+  border: 1px solid #ccc;
+background-color: rgb(31, 105, 242);
+color: white;
+  cursor: pointer;
+  
+  transition: all 0.3s ease-in-out;
+  
+}
+
+.main{
+  
+  background-color: rgb(31, 105, 242);
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 20px;
+  margin-right: 10px;
+  border-radius: 8px;
+
+}
+
+.Label{
+  color:white;
+  
+  font-weight: 500;
+}
+
+.values{
+  padding: 6px;
+  font-size: 15px;
+}
+
+.flex-small{
+  display: flex;
+  margin: 4px;;
+  color: white;
+}
+
+.flex-small-part{
+  display: flex;
+  margin: 2px;;
+  background-color:  rgb(31, 105, 242);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 100%;
+  color: white;
+}
+
+.font-big{
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.final-page {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.home-page {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.enroll-button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #007bff;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.enroll-button:hover {
+  background-color: #0056b3;
+}
+
+.width-100{
+  width: 100vw;
+
 }
